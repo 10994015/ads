@@ -16,7 +16,7 @@
             border-left: 1px #111 solid;
             border-right: 1px #111 solid;
             margin:0 auto;
-            margin-top: 150px;
+            margin-top: 100px;
             font-family: "標楷體";
             position: relative;
         }
@@ -27,6 +27,10 @@
     .content{
         width:500px;
         font-size: 17px;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        line-height: 1.3;
+
         
     }
     .goto{
@@ -42,12 +46,15 @@
         text-decoration: none;
         position: absolute;
         bottom:-50px;right:-170px;
+
     }
     .bottom{
         float: right;
-        width:200px;
+        width:250px;
         align-self:flex-end;
         margin-right: 50px;
+        text-align: right;
+        line-height: 1.6;
     }
     </style>
 </head>
@@ -59,9 +66,9 @@
     <br><br>祝您有個美好的一天！
     </p>
     <p class="bottom">
-    私立中原大學資訊管理研究所
-    指導教授：吳肇銘 博士
-    研究生：黃子恒
+    私立中原大學資訊管理研究所<br>
+    指導教授：吳肇銘 博士<br>
+    研究生：黃子恒<br>
     連絡信箱：karta567815@gmail.com
 
     </p>
