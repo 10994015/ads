@@ -6,107 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        video::-webkit-media-controls-fullscreen-button {
-        display: none;
+        
+        #app{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:600px;
+            border-left: 1px #111 solid;
+            border-right: 1px #111 solid;
+            margin:0 auto;
+            margin-top: 150px;
+            font-family: "標楷體";
+            position: relative;
+        }
+    .title{
+        align-self:flex-start;
+        margin-left: 50px;
     }
-    video::-webkit-media-controls-play-button {
-        display: none;
+    .content{
+        width:500px;
+        font-size: 17px;
+        
     }
-    video::-webkit-media-controls-timeline {
-        display: none;
-    }
-    video::-webkit-media-controls-current-time-display{
-        display: none;            
-    }
-    video::-webkit-media-controls-time-remaining-display {
-        display: none;            
-    }
-    video::-webkit-media-controls-mute-button {
-        display: none;            
-    }
-    video::-webkit-media-controls-toggle-closed-captions-button {
-        display: none;            
-    }
-    video::-webkit-media-controls-volume-slider {
-        display: none;            
-    }
-    video::-webkit-media-controls-enclosure{ 
-        display: none;
-    }
-    .opacity{
-        width:100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left:0;
-        z-index: 999;
-        background-color: transparent;
-    }
-    #btn{
-        position: absolute;
-        bottom: 100px;
-        left:100px;
-        z-index: 99999;
-        width:100px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 600;
+    .goto{
+        display: block;
+        width:150px;
+        height: 45px;
+        border-radius: 6px;
         background-color: #ccc;
-        cursor:pointer;
-    }
-    #step{
+        font-weight: 600;
+        text-align: center;
+        line-height: 45px;
+        color:#000;
+        text-decoration: none;
         position: absolute;
-        bottom: 100px;
-        right:100px;
-        z-index: 99999;
+        bottom:-50px;right:-170px;
     }
-    
-
-
+    .bottom{
+        float: right;
+        width:200px;
+        align-self:flex-end;
+        margin-right: 50px;
+    }
     </style>
 </head>
 <body>
-<div class="opacity"></div>
-    <video width="640" height="480" controls id="video">
-    <source src="./videos/001.mp4" type="video/mp4">
-    <source src="movie.ogg" type="video/ogg">
-    </video>
-<form action="sava.php" method="post">
-    <div id="btn">播放</div>
-    <input type="submit" id="step" value="略過廣告">
-    <input type="hidden" value="" name="second" id="second">
-</form>
-    
-    <h1 id="num">0</h1>
+    <div id="app">
+    <p class="title">親愛的 先生/女士 您好:<br></p>
+    <p class="content">
+    感謝您撥空填答本問卷。本研究是針對數位影音廣告之情感訴求(有趣性、懸疑性)、敘事結構對喚醒、持續觀看意圖及態度影響之研究。實驗共需觀看三支影音廣告，每個廣告皆設有略過廣告之按鈕，請依平時對於影音廣告的觀看情境來判斷是否持續觀看。每支廣告觀看完即填寫一份問卷，共三次，實驗中所有問題請您依照當下情境填寫，您的用心將使本研究成果更具意義。問卷採不記名方式，全部資料僅供學術之用，不對外開放，敬請您安心填答，在此由衷的感謝您的參與和配合。
+    <br><br>祝您有個美好的一天！
+    </p>
+    <p class="bottom">
+    私立中原大學資訊管理研究所
+    指導教授：吳肇銘 博士
+    研究生：黃子恒
+    連絡信箱：karta567815@gmail.com
 
-    <script>
-    const btn = document.getElementById('btn');
-    const video = document.getElementById('video');
-    const step = document.getElementById('step');
-    let times = 0;
-    const num = document.getElementById('num');
-    let timer = null;
-    const second = document.getElementById('second');
-
-    const play = ()=>{
-        btn.style.display = "none";
-        video.play();
-        setTimeout(()=>{
-            step.innerHTML = "下一頁";
-        },112000)
-        timer = setInterval(()=>{
-            times++;
-            num.innerHTML = times + "秒";
-            if(times===112){
-                clearInterval(timer);
-            }
-        },1000)
-    }
-    btn.addEventListener('click',play);
-    step.addEventListener('click',()=>{
-        second.value = times;
-    });
-    </script>
+    </p>
+    <a href="vedio1.php" class="goto">開始實驗</a>
+    </div>
+   
 </body>
 </html>

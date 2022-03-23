@@ -18,6 +18,21 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
         border-bottom: 1px #ccc solid;
         padding: 10px 0;
     }
+    form{
+        border-left:1px #111 solid;
+        border-right: 1px #111 solid;
+        padding: 0 50px;
+        margin:50px auto;
+        width:650px;
+        font-family: "標楷體";
+        font-size: 17px;
+    }
+    #btn {
+        float: right;
+        margin-top: 15px;
+        width:100px;
+        height: 40px;
+    }
     
     </style>
 </head>
