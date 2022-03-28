@@ -1,0 +1,61 @@
+
+        body{
+            background-image: url('./images/bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        #title{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #app{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:600px;
+            border-left: 1px #111 solid;
+            border-right: 1px #111 solid;
+            margin:0 auto;
+            margin-top: 50px;
+            font-family: "標楷體";
+            position: relative;
+        }
+    .title{
+        align-self:flex-start;
+        margin-left: 50px;
+    }
+    .content{
+        width:500px;
+        font-size: 17px;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        line-height: 1.5;
+
+        
+    }
+    .goto{
+        display: block;
+        width:150px;
+        height: 45px;
+        border-radius: 6px;
+        background-color: #ccc;
+        font-weight: 600;
+        text-align: center;
+        line-height: 45px;
+        color:#000;
+        text-decoration: none;
+        position: absolute;
+        bottom:-50px;right:-170px;
+
+    }
+    .bottom{
+        float: right;
+        width:250px;
+        align-self:flex-end;
+        margin-right: 50px;
+        text-align: right;
+        line-height: 1.6;
+    }
