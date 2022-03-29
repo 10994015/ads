@@ -35,6 +35,12 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
         width:100px;
         height: 40px;
     }
+    @media screen and (max-width:720px){
+        .question{
+            display: flex;
+            flex-direction: column;
+        }
+    }
     @media screen and (max-width:680px){
         form{
             width:90%;
@@ -109,7 +115,7 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
             <p>Q7:我認為這個廣告具有有趣性。</p>
            <label for="q7-1"> <input id="q7-1" type="radio" name="q7" value="1" class="q7 radio">非常不同意</label>
            <label for="q7-2"> <input id="q7-2" type="radio" name="q7" value="2" class="q7 radio">不同意</label>
-           <label for="q7-3"> <input id="q7-3" type="radio" name="q7" value="3" class="q7 radio">有點不同意
+           <label for="q7-3"> <input id="q7-3" type="radio" name="q7" value="3" class="q7 radio">有點不同意</label>
            <label for="q7-4"> <input id="q7-4" type="radio" name="q7" value="4" class="q7 radio">普通</label>
            <label for="q7-5"> <input id="q7-5" type="radio" name="q7" value="5" class="q7 radio">有點同意</label>
            <label for="q7-6"> <input id="q7-6" type="radio" name="q7" value="6" class="q7 radio">同意</label>
@@ -203,7 +209,7 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
             }
             
         }
-        console.log("total=>", totalbool);
+        // console.log("total=>", totalbool);
         
     }
     for(let b=0;b<radio.length;b++){

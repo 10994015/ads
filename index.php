@@ -38,6 +38,9 @@ $v3 = $vedioArr[2];
         margin:auto;
         width:450px;
     }
+    .rwdbr{
+        display: none;
+    }
     @media screen and (max-width:420px){
         #title{
             width:300px;
@@ -45,6 +48,9 @@ $v3 = $vedioArr[2];
         }
         #title > img{
             width:300px;
+        }
+        .rwdbr{
+            display: block;
         }
     }
     </style>
@@ -61,7 +67,7 @@ $v3 = $vedioArr[2];
     私立中原大學資訊管理研究所<br>
     指導教授：吳肇銘 博士<br>
     研究生：黃子恒<br>
-    連絡信箱：karta567815@gmail.com
+    連絡信箱：<br class="rwdbr" />karta567815@gmail.com
 
     </p>
     <a href="vedio<?php echo $v1;?>.php?code=<?php echo $code;?>&v1=<?php echo $v1; ?>&v2=<?php echo $v2; ?>&v3=<?php echo $v3; ?>" class="goto">下一頁</a>
