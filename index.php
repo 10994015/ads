@@ -32,7 +32,22 @@ $v3 = $vedioArr[2];
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>adsarousal</title>
+    <style>
+    #title{
+        margin:auto;
+        width:450px;
+    }
+    @media screen and (max-width:420px){
+        #title{
+            width:300px;
+            margin:auto;
+        }
+        #title > img{
+            width:300px;
+        }
+    }
+    </style>
 </head>
 <body>
     <div id="title"><img src="./images/cycu.jpg" alt=""></div>

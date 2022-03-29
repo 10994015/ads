@@ -9,6 +9,11 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            width:450px;
+            margin:auto;
+        }
+        #title > img{
+            width:450px;
         }
         #app{
             display: flex;
@@ -48,7 +53,7 @@
         color:#000;
         text-decoration: none;
         position: absolute;
-        bottom:-50px;right:-170px;
+        bottom:-60px;right:0;
 
     }
     .bottom{
@@ -58,4 +63,21 @@
         margin-right: 50px;
         text-align: right;
         line-height: 1.6;
+    }
+    @media screen and (max-width:620px){
+        #app{
+            width:98%;
+        }
+        .content{
+            width:95%;
+        }
+    }
+    @media screen and (max-width:420px){
+        #title{
+            width:300px;
+            margin:auto;
+        }
+        #title > img{
+            width:300px;
+        }
     }
