@@ -12,7 +12,7 @@ while(true){
     $r = rand(1,8);
     foreach($vedioArr as $item){
         if($item == $r){
-            return;
+            continue;
         }
     }
     array_push($vedioArr, $r);
