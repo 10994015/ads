@@ -10,7 +10,7 @@
 <body>
 <div class="opacity"></div>
     <div id="app">
-        <video width="640" height="480" controls id="video">
+        <video width="640" height="480" id="video" playsinline>
             <source src="./videos/A.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
         </video>
