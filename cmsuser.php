@@ -46,6 +46,7 @@ if(isset($_SESSION['username'])){
             <td>性別</td>
             <td>年齡</td>
             <td>網路</td>
+            <td>時間</td>
             <td>-</td>
         </tr>    
     <?php foreach($row as $item){ ?>
@@ -55,6 +56,7 @@ if(isset($_SESSION['username'])){
         <td><?php echo $item['gender']; ?></td>
         <td><?php echo $item['age']; ?></td>
         <td><?php echo $item['network']; ?></td>
+        <td><?php echo $item['timeEnd']; ?></td>
         <td><a href="userdata.php?code=<?php echo $item['code'];?>">查看</a></td>
         </tr>
     <?php } ?>

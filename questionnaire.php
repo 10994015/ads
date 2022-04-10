@@ -53,93 +53,93 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
     <form action="savequset.php"" method="post">
         <div class="question">
             <p>Q1:觀看影片後，我有被激發出一種特定的情緒(如:好玩有趣、懸疑好奇等)。</p>
-            <label for="q1-1"><input id="q1-1" type="radio" name="q1" value="1" class="q1 radio">非常不同意</label>
-            <label for="q1-2"><input id="q1-2" type="radio" name="q1" value="2" class="q1 radio">不同意</label>
-            <label for="q1-3"><input id="q1-3" type="radio" name="q1" value="3" class="q1 radio">有點不同意</label>
-            <label for="q1-4"><input id="q1-4" type="radio" name="q1" value="4" class="q1 radio">普通</label>
-            <label for="q1-5"><input id="q1-5" type="radio" name="q1" value="5" class="q1 radio">有點同意</label>
-            <label for="q1-6"><input id="q1-6" type="radio" name="q1" value="6" class="q1 radio">同意</label>
             <label for="q1-7"><input id="q1-7" type="radio" name="q1" value="7" class="q1 radio">非常同意</label>
+            <label for="q1-6"><input id="q1-6" type="radio" name="q1" value="6" class="q1 radio">同意</label>
+            <label for="q1-5"><input id="q1-5" type="radio" name="q1" value="5" class="q1 radio">有點同意</label>
+            <label for="q1-4"><input id="q1-4" type="radio" name="q1" value="4" class="q1 radio">普通</label>
+            <label for="q1-3"><input id="q1-3" type="radio" name="q1" value="3" class="q1 radio">有點不同意</label>
+            <label for="q1-2"><input id="q1-2" type="radio" name="q1" value="2" class="q1 radio">不同意</label>
+            <label for="q1-1"><input id="q1-1" type="radio" name="q1" value="1" class="q1 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q2:看影片時，我原本平靜的情緒受到影片影響而產生波動。</p>
-            <label for="q2-1"><input id="q2-1" type="radio" name="q2" value="1" class="q2 radio">非常不同意</label>
-            <label for="q2-2"><input id="q2-2" type="radio" name="q2" value="2" class="q2 radio">不同意</label>
-            <label for="q2-3"><input id="q2-3" type="radio" name="q2" value="3" class="q2 radio">有點不同意</label>
-            <label for="q2-4"><input id="q2-4" type="radio" name="q2" value="4" class="q2 radio">普通</label>
-            <label for="q2-5"><input id="q2-5" type="radio" name="q2" value="5" class="q2 radio">有點同意</label>
-            <label for="q2-6"><input id="q2-6" type="radio" name="q2" value="6" class="q2 radio">同意</label>
             <label for="q2-7"><input id="q2-7" type="radio" name="q2" value="7" class="q2 radio">非常同意</label>
+            <label for="q2-6"><input id="q2-6" type="radio" name="q2" value="6" class="q2 radio">同意</label>
+            <label for="q2-5"><input id="q2-5" type="radio" name="q2" value="5" class="q2 radio">有點同意</label>
+            <label for="q2-4"><input id="q2-4" type="radio" name="q2" value="4" class="q2 radio">普通</label>
+            <label for="q2-3"><input id="q2-3" type="radio" name="q2" value="3" class="q2 radio">有點不同意</label>
+            <label for="q2-2"><input id="q2-2" type="radio" name="q2" value="2" class="q2 radio">不同意</label>
+            <label for="q2-1"><input id="q2-1" type="radio" name="q2" value="1" class="q2 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q3:在看影片時，我的情緒有受到影片操控(被帶著走)。</p>
-            <label for="q3-1"><input id="q3-1" type="radio" name="q3" value="1" class="q3 radio">非常不同意</label>
-            <label for="q3-2"><input id="q3-2" type="radio" name="q3" value="2" class="q3 radio">不同意</label>
-            <label for="q3-3"><input id="q3-3" type="radio" name="q3" value="3" class="q3 radio">有點不同意</label>
-            <label for="q3-4"><input id="q3-4" type="radio" name="q3" value="4" class="q3 radio">普通</label>
-            <label for="q3-5"><input id="q3-5" type="radio" name="q3" value="5" class="q3 radio">有點同意</label>
-            <label for="q3-6"><input id="q3-6" type="radio" name="q3" value="6" class="q3 radio">同意</label>
             <label for="q3-7"><input id="q3-7" type="radio" name="q3" value="7" class="q3 radio">非常同意</label>
+            <label for="q3-6"><input id="q3-6" type="radio" name="q3" value="6" class="q3 radio">同意</label>
+            <label for="q3-5"><input id="q3-5" type="radio" name="q3" value="5" class="q3 radio">有點同意</label>
+            <label for="q3-4"><input id="q3-4" type="radio" name="q3" value="4" class="q3 radio">普通</label>
+            <label for="q3-3"><input id="q3-3" type="radio" name="q3" value="3" class="q3 radio">有點不同意</label>
+            <label for="q3-2"><input id="q3-2" type="radio" name="q3" value="2" class="q3 radio">不同意</label>
+            <label for="q3-1"><input id="q3-1" type="radio" name="q3" value="1" class="q3 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q4:我很喜歡這部廣告。</p>
-           <label for="q4-1"> <input id="q4-1" type="radio" name="q4" value="1" class="q4 radio">非常不同意</label>
-           <label for="q4-2"> <input id="q4-2" type="radio" name="q4" value="2" class="q4 radio">不同意</label>
-           <label for="q4-3"> <input id="q4-3" type="radio" name="q4" value="3" class="q4 radio">有點不同意</label>
-           <label for="q4-4"> <input id="q4-4" type="radio" name="q4" value="4" class="q4 radio">普通</label>
-           <label for="q4-5"> <input id="q4-5" type="radio" name="q4" value="5" class="q4 radio">有點同意</label>
-           <label for="q4-6"> <input id="q4-6" type="radio" name="q4" value="6" class="q4 radio">同意</label>
            <label for="q4-7"> <input id="q4-7" type="radio" name="q4" value="7" class="q4 radio">非常同意</label>
+           <label for="q4-6"> <input id="q4-6" type="radio" name="q4" value="6" class="q4 radio">同意</label>
+           <label for="q4-5"> <input id="q4-5" type="radio" name="q4" value="5" class="q4 radio">有點同意</label>
+           <label for="q4-4"> <input id="q4-4" type="radio" name="q4" value="4" class="q4 radio">普通</label>
+           <label for="q4-3"> <input id="q4-3" type="radio" name="q4" value="3" class="q4 radio">有點不同意</label>
+           <label for="q4-2"> <input id="q4-2" type="radio" name="q4" value="2" class="q4 radio">不同意</label>
+           <label for="q4-1"> <input id="q4-1" type="radio" name="q4" value="1" class="q4 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q5:我認為這部廣告很好。</p>
-          <label for="q5-1" > <input id="q5-1" type="radio" name="q5" value="1" class="q5 radio">非常不同意</label>
-          <label for="q5-2" > <input id="q5-2" type="radio" name="q5" value="2" class="q5 radio">不同意</label>
-          <label for="q5-3" > <input id="q5-3" type="radio" name="q5" value="3" class="q5 radio">有點不同意</label>
-          <label for="q5-4" > <input id="q5-4" type="radio" name="q5" value="4" class="q5 radio">普通</label>
-          <label for="q5-5" > <input id="q5-5" type="radio" name="q5" value="5" class="q5 radio">有點同意</label>
-          <label for="q5-6" > <input id="q5-6" type="radio" name="q5" value="6" class="q5 radio">同意</label>
           <label for="q5-7" > <input id="q5-7" type="radio" name="q5" value="7" class="q5 radio">非常同意</label>
+          <label for="q5-6" > <input id="q5-6" type="radio" name="q5" value="6" class="q5 radio">同意</label>
+          <label for="q5-5" > <input id="q5-5" type="radio" name="q5" value="5" class="q5 radio">有點同意</label>
+          <label for="q5-4" > <input id="q5-4" type="radio" name="q5" value="4" class="q5 radio">普通</label>
+          <label for="q5-3" > <input id="q5-3" type="radio" name="q5" value="3" class="q5 radio">有點不同意</label>
+          <label for="q5-2" > <input id="q5-2" type="radio" name="q5" value="2" class="q5 radio">不同意</label>
+          <label for="q5-1" > <input id="q5-1" type="radio" name="q5" value="1" class="q5 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q6:我認為這個廣告很吸引人。</p>
-           <label for="q6-1"> <input id="q6-1" type="radio" name="q6" value="1" class="q6 radio">非常不同意</label>
-           <label for="q6-2"> <input id="q6-2" type="radio" name="q6" value="2" class="q6 radio">不同意</label>
-           <label for="q6-3"> <input id="q6-3" type="radio" name="q6" value="3" class="q6 radio">有點不同意</label>
-           <label for="q6-4"> <input id="q6-4" type="radio" name="q6" value="4" class="q6 radio">普通</label>
-           <label for="q6-5"> <input id="q6-5" type="radio" name="q6" value="5" class="q6 radio">有點同意</label>
-           <label for="q6-6"> <input id="q6-6" type="radio" name="q6" value="6" class="q6 radio">同意</label>
            <label for="q6-7"> <input id="q6-7" type="radio" name="q6" value="7" class="q6 radio">非常同意</label>
+           <label for="q6-6"> <input id="q6-6" type="radio" name="q6" value="6" class="q6 radio">同意</label>
+           <label for="q6-5"> <input id="q6-5" type="radio" name="q6" value="5" class="q6 radio">有點同意</label>
+           <label for="q6-4"> <input id="q6-4" type="radio" name="q6" value="4" class="q6 radio">普通</label>
+           <label for="q6-3"> <input id="q6-3" type="radio" name="q6" value="3" class="q6 radio">有點不同意</label>
+           <label for="q6-2"> <input id="q6-2" type="radio" name="q6" value="2" class="q6 radio">不同意</label>
+           <label for="q6-1"> <input id="q6-1" type="radio" name="q6" value="1" class="q6 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q7:我認為這個廣告具有有趣性。</p>
-           <label for="q7-1"> <input id="q7-1" type="radio" name="q7" value="1" class="q7 radio">非常不同意</label>
-           <label for="q7-2"> <input id="q7-2" type="radio" name="q7" value="2" class="q7 radio">不同意</label>
-           <label for="q7-3"> <input id="q7-3" type="radio" name="q7" value="3" class="q7 radio">有點不同意</label>
-           <label for="q7-4"> <input id="q7-4" type="radio" name="q7" value="4" class="q7 radio">普通</label>
-           <label for="q7-5"> <input id="q7-5" type="radio" name="q7" value="5" class="q7 radio">有點同意</label>
-           <label for="q7-6"> <input id="q7-6" type="radio" name="q7" value="6" class="q7 radio">同意</label>
            <label for="q7-7"> <input id="q7-7" type="radio" name="q7" value="7" class="q7 radio">非常同意</label>
+           <label for="q7-6"> <input id="q7-6" type="radio" name="q7" value="6" class="q7 radio">同意</label>
+           <label for="q7-5"> <input id="q7-5" type="radio" name="q7" value="5" class="q7 radio">有點同意</label>
+           <label for="q7-4"> <input id="q7-4" type="radio" name="q7" value="4" class="q7 radio">普通</label>
+           <label for="q7-3"> <input id="q7-3" type="radio" name="q7" value="3" class="q7 radio">有點不同意</label>
+           <label for="q7-2"> <input id="q7-2" type="radio" name="q7" value="2" class="q7 radio">不同意</label>
+           <label for="q7-1"> <input id="q7-1" type="radio" name="q7" value="1" class="q7 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q8:我認為這個廣告具有懸疑性。</p>
-           <label for="q8-1"> <input id="q8-1" type="radio" name="q8" value="1" class="q8 radio">非常不同意</label>
-           <label for="q8-2"> <input id="q8-2" type="radio" name="q8" value="2" class="q8 radio">不同意</label>
-           <label for="q8-3"> <input id="q8-3" type="radio" name="q8" value="3" class="q8 radio">有點不同意</label>
-           <label for="q8-4"> <input id="q8-4" type="radio" name="q8" value="4" class="q8 radio">普通</label>
-           <label for="q8-5"> <input id="q8-5" type="radio" name="q8" value="5" class="q8 radio">有點同意</label>
-           <label for="q8-6"> <input id="q8-6" type="radio" name="q8" value="6" class="q8 radio">同意</label>
            <label for="q8-7"> <input id="q8-7" type="radio" name="q8" value="7" class="q8 radio">非常同意</label>
+           <label for="q8-6"> <input id="q8-6" type="radio" name="q8" value="6" class="q8 radio">同意</label>
+           <label for="q8-5"> <input id="q8-5" type="radio" name="q8" value="5" class="q8 radio">有點同意</label>
+           <label for="q8-4"> <input id="q8-4" type="radio" name="q8" value="4" class="q8 radio">普通</label>
+           <label for="q8-3"> <input id="q8-3" type="radio" name="q8" value="3" class="q8 radio">有點不同意</label>
+           <label for="q8-2"> <input id="q8-2" type="radio" name="q8" value="2" class="q8 radio">不同意</label>
+           <label for="q8-1"> <input id="q8-1" type="radio" name="q8" value="1" class="q8 radio">非常不同意</label>
         </div>
         <div class="question">
             <p>Q9:我認為這個廣告敘事結構非常清楚。</p>
-           <label for="q9-1"> <input id="q9-1" type="radio" name="q9" value="1" class="q9 radio">非常不同意</label>
-           <label for="q9-2"> <input id="q9-2" type="radio" name="q9" value="2" class="q9 radio">不同意</label>
-           <label for="q9-3"> <input id="q9-3" type="radio" name="q9" value="3" class="q9 radio">有點不同意</label>
-           <label for="q9-4"> <input id="q9-4" type="radio" name="q9" value="4" class="q9 radio">普通</label>
-           <label for="q9-5"> <input id="q9-5" type="radio" name="q9" value="5" class="q9 radio">有點同意</label>
-           <label for="q9-6"> <input id="q9-6" type="radio" name="q9" value="6" class="q9 radio">同意</label>
-           <label for="q9-7"> <input id="q9-7" type="radio" name="q9" value="7" class="q9 radio">非常同意</label>
+            <label for="q9-7"> <input id="q9-7" type="radio" name="q9" value="7" class="q9 radio">非常同意</label>
+            <label for="q9-6"> <input id="q9-6" type="radio" name="q9" value="6" class="q9 radio">同意</label>
+            <label for="q9-5"> <input id="q9-5" type="radio" name="q9" value="5" class="q9 radio">有點同意</label>
+            <label for="q9-4"> <input id="q9-4" type="radio" name="q9" value="4" class="q9 radio">普通</label>
+            <label for="q9-3"> <input id="q9-3" type="radio" name="q9" value="3" class="q9 radio">有點不同意</label>
+            <label for="q9-2"> <input id="q9-2" type="radio" name="q9" value="2" class="q9 radio">不同意</label>
+            <label for="q9-1"> <input id="q9-1" type="radio" name="q9" value="1" class="q9 radio">非常不同意</label>
         </div>
         
         <input type="hidden" value="<?php echo $id; ?>" name="id">

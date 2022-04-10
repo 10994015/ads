@@ -55,38 +55,38 @@ if(isset($_GET['code'])){
         <td colspan="2"><b>性別:</b></td>
     </tr>
     <tr>
-        <td colspan="2"><label for="men"><input id="men" type="radio" name="gender" value="男" class="gender radio">男</label> <label for="women"><input id="women" type="radio" value="女" name="gender" class="gender radio">女</label></td>
+        <td colspan="2"><label for="men"><input id="men" type="radio" name="gender" value="1" class="gender radio">男</label> <label for="women"><input id="women" type="radio" value="0" name="gender" class="gender radio">女</label></td>
     </tr>
     <tr>
         <td rowspan="4" class="qnumber">2</td>
         <td colspan="2"><b>年齡:</b></td>
     </tr>
     <tr>
-        <td><label for="age1"><input id="age1" type="radio" name="age" value="20歲(含)以下" class="age radio">20歲(含)以下</label></td>
-        <td><label for="age2"><input id="age2" type="radio" value="21~30歲" name="age" class="age radio">21~30歲</label></td>
+        <td><label for="age1"><input id="age1" type="radio" name="age" value="1" class="age radio">20歲(含)以下</label></td>
+        <td><label for="age2"><input id="age2" type="radio" value="2" name="age" class="age radio">21~30歲</label></td>
     </tr>
     <tr>
-        <td> <label for="age3"><input id="age3" type="radio" value="31~40歲" name="age" class="age radio">31~40歲</label></td>
-        <td><label for="age4"><input id="age4" type="radio" value="41~50歲" name="age" class="age radio">41~50歲</label></td>
+        <td> <label for="age3"><input id="age3" type="radio" value="3" name="age" class="age radio">31~40歲</label></td>
+        <td><label for="age4"><input id="age4" type="radio" value="4" name="age" class="age radio">41~50歲</label></td>
     </tr>
     <tr>
-        <td><label for="age5"><input id="age5" type="radio" value="51~60歲" name="age" class="age radio">51~60歲</label></td>
-        <td><label for="age6"><input id="age6" type="radio" value="61歲(含)以上" name="age" class="age radio">61歲(含)以上</label></td>
+        <td><label for="age5"><input id="age5" type="radio" value="5" name="age" class="age radio">51~60歲</label></td>
+        <td><label for="age6"><input id="age6" type="radio" value="6" name="age" class="age radio">61歲(含)以上</label></td>
     </tr>
     <tr>
         <td rowspan="4" class="qnumber">3</td>
         <td colspan="2"><b>平均一天網路使用時間:</b></td>
     </tr>
     <tr>
-        <td><label for="n1"><input id="n1" type="radio" value="1小時以下" name="network" class="network radio">1小時以下</label></td>
-        <td><label for="n2"><input id="n2" type="radio" value="1小時~2小時" name="network" class="network radio">1小時~2小時</label></td>
+        <td><label for="n1"><input id="n1" type="radio" value="1" name="network" class="network radio">1小時以下</label></td>
+        <td><label for="n2"><input id="n2" type="radio" value="2" name="network" class="network radio">1小時~2小時</label></td>
     </tr>
     <tr>
-        <td><label for="n3"><input id="n3" type="radio" value="2小時~3小時" name="network" class="network radio">2小時~3小時</label></td>
-        <td><label for="n4"><input id="n4" type="radio" value="3小時~4小時" name="network" class="network radio">3小時~4小時</label></td>
+        <td><label for="n3"><input id="n3" type="radio" value="3" name="network" class="network radio">2小時~3小時</label></td>
+        <td><label for="n4"><input id="n4" type="radio" value="4" name="network" class="network radio">3小時~4小時</label></td>
     </tr>
     <tr>
-        <td><label for="n5"><input id="n5" type="radio" value="4小時以上" name="network" class="network radio">4小時以上</label></td>
+        <td><label for="n5"><input id="n5" type="radio" value="5" name="network" class="network radio">4小時以上</label></td>
         <td></td>
     </tr>
 </table>

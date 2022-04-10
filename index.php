@@ -1,6 +1,6 @@
 <?php
-$a = rand(1000000000,9999999999);
-$b = rand(1000000000,9999999999);
+$a = rand(10000000,9999999999);
+$b = rand(10000000,9999999999);
 $c = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 $d = rand(0,25);
 $e = $c[$d];
@@ -10,16 +10,16 @@ $code = $e.strval($a).strval($b);
 $vedioArr = [];
 while(true){
     $r = rand(1,8);
-    foreach($vedioArr as $item){
-        if($item == $r){
-            continue;
-        }
+
+    if(in_array($r, $vedioArr)){
+        continue;
     }
     array_push($vedioArr, $r);
     if(count($vedioArr) == 3){
         break;
     }
 }
+// print_r($vedioArr);
 // print_r($vedioArr);
 $v1 = $vedioArr[0];
 $v2 = $vedioArr[1];
@@ -51,16 +51,16 @@ $v3 = $vedioArr[2];
         }
         .rwdbr{
             display: block;
-        }
+                    }
     }
     </style>
 </head>
 <body>
     <div id="title"><img src="./images/cycu.jpg" alt=""></div>
     <div id="app">
-    <p class="title">各位  Z世代的同胞們 您好: <br></p>
+    <p class="title">各位 數位時代的同胞們 您好: <br></p>
     <p class="content">
-    　　感謝您撥空填答本問卷。本研究是針對數位影音廣告之情感訴求(有趣性、懸疑性)、敘事結構對喚醒、持續觀看意圖及態度影響之研究。過程中共需觀看三支影音廣告，每個廣告皆設有略過廣告之按鈕，請依<span style="color:#f00">平時對於影音廣告的觀看情境來判斷是否持續觀看</span>。每支廣告觀看完即填寫一份問卷，共三次，過程中所有問題請您依照當下情境填寫，您的用心將使本研究成果更具意義。問卷採不記名方式，全部資料僅供學術之用，不對外開放，敬請您安心填答，在此由衷的感謝您的參與和配合。
+    　　感謝您撥空填答本問卷。本研究是針對數位影音廣告之情感訴求、敘事結構對喚醒、持續觀看意圖及態度影響之研究。過程中共需觀看三支影音廣告，每個廣告皆設有略過廣告之按鈕，請依<span style="color:#f00;">平時對於影音廣告的觀看情境來判斷是否持續觀看</span>。每支廣告觀看完即填寫一份問卷，共三次，過程中所有問題請您依照當下情境填寫，您的用心將使本研究成果更具意義。問卷採不記名方式，全部資料僅供學術之用，不對外開放，敬請您安心填答，在此由衷的感謝您的參與和配合。
     <br><br>祝您有個美好的一天！
     </p>
     <p class="bottom">
