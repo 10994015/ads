@@ -25,38 +25,42 @@
             <?php if(isset($_GET['v3'])){ ?><input type="hidden" name="v3" value="<?php echo $_GET['v3'];?>"> <?php }?>
         </form>
     </div>
-    
+    <div id="loading">
+        <img src="./images/loading.gif" alt="">
+    </div>
     <h1 id="num" style="opacity:0">0</h1>
 
     <script>
-    const btn = document.getElementById('btn');
-    const video = document.getElementById('video');
-    const step = document.getElementById('step');
-    let times = 0;
-    const num = document.getElementById('num');
-    let timer = null;
-    const second = document.getElementById('second');
+        const btn = document.getElementById('btn');
+        const video = document.getElementById('video');
+        const step = document.getElementById('step');
+        let times = 0;
+        const num = document.getElementById('num');
+        let timer = null;
+        const second = document.getElementById('second');
+        const loading = document.getElementById('loading');
 
-    const play = ()=>{
-        btn.style.display = "none";
-        step.style.display = "block";
-        video.play();
-        setTimeout(()=>{
-            step.value = "下一頁";
-            console.log("ok");
-        },88000)
-        timer = setInterval(()=>{
-            times++;
-            num.innerHTML = times + "秒";
-            if(times===88){
-                clearInterval(timer);
-            }
-        },1000)
-    }
-    btn.addEventListener('click',play);
-    step.addEventListener('click',()=>{
-        second.value = times;
-    });
+        const play = ()=>{
+            btn.style.display = "none";
+            step.style.display = "block";
+            video.play();
+            setTimeout(()=>{
+                step.value = "下一頁";
+                console.log("ok");
+            },88000)
+            timer = setInterval(()=>{
+                times++;
+                num.innerHTML = times + "秒";
+                if(times===88){
+                    clearInterval(timer);
+                }
+            },1000)
+        }
+        btn.addEventListener('click',play);
+        step.addEventListener('click',()=>{
+            second.value = times;
+            loading.style.display = "flex";
+        });
     </script>
 </body>
 </html>

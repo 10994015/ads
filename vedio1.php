@@ -25,7 +25,9 @@
             <?php if(isset($_GET['v3'])){ ?><input type="hidden" name="v3" value="<?php echo $_GET['v3'];?>"> <?php }?>
         </form>
     </div>
-    
+    <div id="loading">
+        <img src="./images/loading.gif" alt="">
+    </div>
     <h1 id="num" style="opacity:0">0</h1>
 
     <script>
@@ -36,7 +38,7 @@
     const num = document.getElementById('num');
     let timer = null;
     const second = document.getElementById('second');
-
+    const loading = document.getElementById('loading');
     const play = ()=>{
         btn.style.display = "none";
         step.style.display = "block";
@@ -56,6 +58,7 @@
     btn.addEventListener('click',play);
     step.addEventListener('click',()=>{
         second.value = times;
+        loading.style.display = "flex";
     });
     </script>
 </body>
