@@ -3,8 +3,8 @@
 require_once('conn.php'); 
 session_start();
 
-    $sql_str = "SELECT * FROM information WHERE vedio='1' ORDER BY id ASC";
-    $row = $conn -> query($sql_str);
+$sql_str = "SELECT * FROM information WHERE vedio='1' ORDER BY id ASC";
+$row = $conn -> query($sql_str);
 
    $list = 0;
 if(isset($_SESSION['username'])){
@@ -43,6 +43,9 @@ if(isset($_SESSION['username'])){
 <table class="user" border="1">
         <tr>
             <td> </td>
+            <td>性別</td>
+            <td>年齡</td>
+            <td>網路</td>
             <td>秒數</td>
             <td>%數</td>
             <td>T/F</td>
@@ -56,10 +59,21 @@ if(isset($_SESSION['username'])){
             <td>第八題</td>
             <td>第九題</td>
         </tr>    
-    <?php foreach($row as $item){ ?>
+    <?php foreach($row as $item){
+        $code = $item['code'];
+        $sql = "SELECT * FROM finishdata WHERE code = :code";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':code',$code);
+        $stmt->execute();
+        $row_RS_mb = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    ?>
         <?php $list++; ?>
         <tr>
-        <td class='list'><?php echo $list;?></td>    
+        <td class='list'><?php echo $list;?></td>   
+        <td><?php echo $row_RS_mb['gender']; ?></td> 
+        <td><?php echo $row_RS_mb['age']; ?></td> 
+        <td><?php echo $row_RS_mb['network']; ?></td> 
         <td><?php echo $item['second']; ?></td>
         <td><?php echo round(intval($item['second'])/58,3)*100; ?>%</td>
         <td><?php if((intval($item['second'])/58) == 1){echo "T";}else{echo "F";} ?></td>
