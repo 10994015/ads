@@ -46,7 +46,21 @@ session_start();
     $rowH = $conn -> query($sql_H);
     $total_H = $rowH -> rowCount();
 
-
+    $sql = "SELECT * FROM information";
+    $rowNum = $conn -> query($sql);
+    $newArr = array();
+    foreach($rowNum as $item){
+        $code = $item['code'];
+        if($code == "0"){
+            array_push($newArr,  $code);
+            continue;
+        }
+        if(in_array($code, $newArr)){
+        }else{
+            array_push($newArr,  $code);
+        }
+    }
+    $num = count($newArr);
    
 if(isset($_SESSION['username'])){
 ?>
@@ -60,25 +74,26 @@ if(isset($_SESSION['username'])){
     <title>Document</title>
     <style>
     
-    .box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .box > div{
-        display: flex;
-        align-items: center;
-    }
-    .box  >div>a{
-        width:200px;
-    }
-    img{
-        width:100%;
-    }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box > div{
+            display: flex;
+            align-items: center;
+        }
+        .box  >div>a{
+            width:200px;
+        }
+        img{
+            width:100%;
+        }
     </style>
 </head>
 <body>
   <div class="box">
+    <div>總受測者:<?php echo $num; ?></div>
     <div><a href="./cmsuser.php"><img src="./images/0.png" alt=""></a>有<?php echo $total_user; ?>筆</div>
     <div><a href="./cmsA.php"><img src="./images/a.png" alt=""></a>有<?php echo $total_A; ?>筆</div>
     <div><a href="./cmsB.php"><img src="./images/b.png" alt=""></a>有<?php echo $total_B; ?>筆</div>
